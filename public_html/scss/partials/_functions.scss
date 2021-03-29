@@ -3,17 +3,35 @@
 //MIXIN
 
 @mixin radius($radius){
-     border-radius: $radius;
-    -moz-border-radius: $radius;
-    -webkit-border-radius: $radius;
-    -o-border-radius: $radius;
+
+    @if($enable-radius){
+        border-radius: $radius;
+        -moz-border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -o-border-radius: $radius;
+    }@else{
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
 }
 
 @mixin customRadisu($rlt, $rlr, $rbr, $rbl){
-    border-radius: $rlt $rlr $rbr $rbl;
-    -moz-border-radius: $rlt $rlr $rbr $rbl;
-    -webkit-border-radius: $rlt $rlr $rbr $rbl;
-    -o-border-radius: $rlt $rlr $rbr $rbl;
+
+    @if($enable-radius){
+        border-radius: $rlt $rlr $rbr $rbl;
+        -moz-border-radius: $rlt $rlr $rbr $rbl;
+        -webkit-border-radius: $rlt $rlr $rbr $rbl;
+        -o-border-radius: $rlt $rlr $rbr $rbl; 
+    }@else{
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
 }
 
 @mixin styleSection($pt, $pb, $bg){
