@@ -1,0 +1,22 @@
+
+
+//MIXIN
+
+@mixin radius($radius){
+     border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -o-border-radius: $radius;
+}
+
+@mixin customRadisu($rlt, $rlr, $rbr, $rbl){
+    border-radius: $rlt $rlr $rbr $rbl;
+    -moz-border-radius: $rlt $rlr $rbr $rbl;
+    -webkit-border-radius: $rlt $rlr $rbr $rbl;
+    -o-border-radius: $rlt $rlr $rbr $rbl;
+}
+
+@mixin styleSection($pt, $pb, $bg){
+    padding: $pt 0 $pb;
+    background-color: $bg;
+}

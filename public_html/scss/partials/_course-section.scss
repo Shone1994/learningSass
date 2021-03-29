@@ -6,7 +6,8 @@ $tbody-even-bg: $white;
 $tbody-hover-bg: darken($light-gray, 15%);
 
 .course-section{
-    padding: 50px 0;
+/*    padding: 50px 0;*/
+@include styleSection(30px, 30px, transparent); //posto treba da nasledi background od sekcije onda stavljamo transparent
     
     table{
         
