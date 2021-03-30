@@ -25,7 +25,7 @@ $btn-colection: (
     border: none;
    
 /*    @include radius(5px);*/
-    @include customRadisu(30px, 0, 30px, 0);
+    @include customRadisu(15px, 0, 15px, 0);
     
     
     cursor: pointer;
